@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal - Thais Sabrina Ferreira Soares </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #33c2ed;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        /* Estilo do menu de navegação */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        /* Seção principal */
+        section {
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: justify;
+            margin: 0 20px;
+        }
+        /* Habilidades com progress bars */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .skill {
+            margin: 10px 0;
+        }
+        .skill span {
+            display: inline-block;
+            width: 100px;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+        }
+        .progress-bar div {
+            height: 10px;
+            border-radius: 20px;
+            background-color: #33c2ed;
+        }
+        /* Estilo do portfólio */
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project {
+            width: 250px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .project a {
+            color: #33c2ed;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        /* Formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+        button {
+            padding: 10px;
+            background-color: #33c2ed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2a9cb4;
+        }
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .skills {
+                width: 80%;
+            }
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="fotothais.jpg" alt="Foto de Thais Sabrina">
+        <h1>Thais Sabrina Ferreira Soares</h1>
+        <p>Estudante de Sistemas de Informação</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre mim -->
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+       
+        <p>Estudante do curso de Sistemas de Informação no Instituto Federal do Norte de Minas Gerais (IFNMG) possui experiência introdutória na área de Ciência da Computação. Com habilidades em circuitos elétricos e planejamento elétrico, desenvolveu também uma forte competência no uso de ferramentas de simulação e planejamento estrutural e elétrico, como o AutoCAD. Atualmente, atua como funcionária de credenciamento, demonstrando grande experiência no atendimento ao público. Além disso, possui habilitação nas categorias A e B, o que amplia suas qualificações para funções que exigem deslocamento. Thais Sabrina Ferreira Soares tem interesse em áreas como desenvolvimento de software e redes de computadores, buscando aprimorar seus conhecimentos e habilidades nessas áreas.</p>
+        <p>Acesse ao LinkedIn <a href="http://lattes.cnpq.br/8969380483869173" target="_blank">clique aqui  </a>.</p> 
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div class="skill">
+                <span>Atendimento ao Público </span>
+                <div class="progress-bar"><div style="width: 100%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Trabalho em Equipe </span>
+                <div class="progress-bar"><div style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Programação</span>
+                <div class="progress-bar"><div style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Planejamento Elétrico</span>
+                <div class="progress-bar"><div style="width: 70%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Simulação de Redes</span>
+                <div class="progress-bar"><div style="width: 60%;"></div></div>
+            </div>
+        </div>
+
+
+
+        <p>
+            Possui um conjunto diversificado de habilidades que a tornam uma estudante e profissional versátil. Ela tem conhecimentos sólidos em desenvolvimento de software, incluindo programação em diversas linguagens e compreensão de algoritmos e estruturas de dados. Além disso, destaca-se em circuitos elétricos e planejamento elétrico, utilizando ferramentas como AutoCAD para criar projetos estruturais e elétricos. Sua experiência em atendimento ao público desenvolveu suas competências de comunicação, empatia e resolução de problemas. Thais também demonstra facilidade em trabalhar em equipe, colaborando efetivamente em ambientes de aprendizado e projetos.
+        </p>
+    </section>
+
+
+
+    
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Estrutura Elétrica Residencial no AutoCAD</h3>
+                <p> Projeto de estrutura elétrica para uma residência utilizando o AutoCAD. O projeto envolveu a criação de um layout eficiente para a distribuição de energia, incluindo a definição de pontos de iluminação e tomadas, sempre considerando a segurança e a eficiência energética. Essa experiência aprimorou suas habilidades técnicas em circuitos elétricos e planejamento.</p>
+                <a href="http://lattes.cnpq.br/8969380483869173
+                ">Ver projeto</a>
+            </div>
+            <div class="project">
+                <h3>Simulação de Redes</h3>
+                <p>Simulação de redes usando o Cisco Packet Tracer, onde criou e configurou uma rede para um ambiente específico. A implementação de VLANs para segmentação de departamentos reforçou seu entendimento sobre endereçamento IP, roteamento e segurança, permitindo que ela aplicasse conceitos teóricos em situações práticas.</p>
+                <a href="http://lattes.cnpq.br/8969380483869173
+                ">Ver projeto</a> 
+            </div>
+            <div class="project">
+                <h3>Desenvolvimento Web</h3>
+                <p>No campo do desenvolvimento web, Thais criou uma página pessoal em HTML, apresentando suas informações, habilidades e projetos. Ela se concentrou em boas práticas de codificação, utilizando HTML5 e CSS para garantir uma navegação intuitiva e um layout responsivo, destacando sua capacidade de criar interfaces funcionais e amigáveis..</p>
+                <a href="http://lattes.cnpq.br/8969380483869173
+                ">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+
+
+        <p>Sempre aberta a novas oportunidades de networking e colaborações. Para entrar em contato, é possível enviar um e-mail para o campo abaixo  selecionado ou conectar-se com ela através de plataformas profissionais como LinkedIn. Thais valoriza a troca de conhecimentos e experiências, e está disposta a discutir projetos, ideias e potenciais parcerias. Além disso, ela está disponível para colaborar em iniciativas que visem o desenvolvimento de soluções tecnológicas inovadoras e a melhoria de processos.
+        </p>
+        <p>LinkedIn <a href="http://lattes.cnpq.br/8969380483869173" target="_blank">clique </a>.</p> <!-- Adicione seu link aqui -->
+        <form action="enviar_contato.php" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="interesses">
+        <h2>Interesses Pessoais</h2>
+        <p>Além da tecnologia, gosto de viajar, ler livros de ficção científica e praticar esportes ao ar livre.</p>
+    </section>
+
+
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <blockquote>
+            <p>"Thais é uma profissional dedicada e sempre disposta a ajudar!" - Professor Mônica</p>
+        </blockquote>
+        
+        <blockquote>
+            <p>"O projeto de simulação de redes dela foi muito impressionante!" - Colega de classe</p>
+        </blockquote>
+    </section>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Thais Sabrina Ferreira Soares . Todos os direitos reservados.</p>
+        <p>
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
